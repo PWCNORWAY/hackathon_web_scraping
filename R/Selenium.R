@@ -1,7 +1,8 @@
+
+# Arbeidsfil for Selenium. Se MVP for fungerende
+
 if (!require('RSelenium')) install.packages('RSelenium'); library('RSelenium')
 library(purrr)
-
-
 
 rD <- rsDriver(browser=c("firefox"))
 
@@ -32,7 +33,6 @@ rD[["server"]]$stop()
 
 
 ### Enkleste måten?
-
 
 parsed_pagesource <- driver$getPageSource()[[1]]
 # using rvest to extract information

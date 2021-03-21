@@ -9,11 +9,6 @@ overskrifter <- html %>%
   html_elements("h4") %>% 
   html_text2() 
 
-
-html %>% 
-  html_elements("div p") %>% 
-  html_text2() 
-
 html %>% 
   html_elements(".ng-binding") %>% 
   html_text2() 
