@@ -1,5 +1,5 @@
-if (!require('rvest')) install.packages('rvest'); library('rvest')
-if (!require('stringr')) install.packages('stringr'); library('stringr')
+library('rvest')
+library('stringr')
 
 # Leser inn HTML fra vg.no
 html <- read_html("https://www.vg.no/", encoding = "UTF-8")

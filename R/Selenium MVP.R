@@ -1,7 +1,7 @@
 # Merk, må ha satt JAVA_HOME først, før kode kjøres
-if (!require('RSelenium')) install.packages('RSelenium'); library('RSelenium')
-if (!require('purrr')) install.packages('purrr'); library('purrr')
-if (!require('rvest')) install.packages('rvest'); library('rvest')
+library(RSelenium)
+library(rvest)
+library(stringr)
 
 # Starter opp server/browser (anbefaler firefox)
 rD <- rsDriver(browser=c("firefox")) 
@@ -27,5 +27,9 @@ result <- read_html(parsed_pagesource) %>%
 # Printer resultatene
 result %>% 
   str_split(., "  ") # Hver ny del starter med 2 mellomrom
+
+
+
+
 
 
