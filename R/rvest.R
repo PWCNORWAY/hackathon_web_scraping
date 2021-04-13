@@ -1,5 +1,5 @@
-library('rvest')
-library('stringr')
+library(rvest)
+library(stringr)
 
 # Leser inn HTML fra vg.no
 html <- read_html("https://www.vg.no/", encoding = "UTF-8")
